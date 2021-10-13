@@ -1,0 +1,134 @@
+/* fontes */
+@font-face {
+    font-family: 'Sansation Bold';
+    src: url('./fontes/Sansation_Bold.ttf') format('truetype') , url('./fontes/Sansation_Bold_Italic.ttf');
+}
+@font-face {
+    font-family: 'Sansation';
+    src: url('./fontes/Sansation_Regular.ttf');
+}
+@font-face {
+    font-family: 'Sansation Light';
+    src: url('./fontes/Sansation_Light.ttf'), url('./fontes/Sansation_Light_Italic.ttf');
+}
+
+/* edição geral */
+*{
+    font-family: 'Sansation', 'Sansation Light';
+    padding: 0;
+    margin: 0;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+/* corpo/fundo */
+body{
+    background-color: #FFFFFF;
+}
+
+/* cabeçalho */
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1A1423;
+    padding: 1%;
+}
+/* retirando a edição dos tópicos no cabeçalho */
+ul{
+    list-style: none;
+    font-size: 35px;
+}
+/* colocando os links na horizantal, mas ainda unidos */
+header ul{
+    display: flex;
+    
+}
+/* separação entre os links  */
+header ul li {
+    padding: 20px;
+}
+/*edição da cor do link e etc  */
+header ul li a{
+    text-decoration: none;
+    color:#F9E7E7
+}
+/* mudança de cor do link ao passar mouse */
+header ul li a:hover{
+    color: #ffbf00;
+    transition: 250ms;
+}
+
+/* o corpo de texto/principal */
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 90px;
+    
+}
+h3 {
+    font-size: 35px;
+    text-align: center;
+}  
+
+/* imagens */
+.container{
+    display: flex;
+    /* onde as imagens descem quando preenche o campo de visão */
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    margin-top: 20px;
+}
+.container figure{
+    margin-top: 10px;
+    padding: 10px;
+}
+.container img{
+    width: 300px;
+    height: 400px;
+}
+.container figcaption{
+    font-size: 20px;
+    text-align: center;
+    background-color: #e83f6f;
+}
+
+
+.referencia{
+    display: flex;
+    text-align: center;
+    margin: 20px;
+    margin-left: 525px;
+    background-color: rgb(232, 63, 111, 30%);
+    border-radius: 50px;
+    width: 300px;
+}
+.referencia p{
+    font-size: 15px;
+    font-display: flex;
+    text-align: center;
+    padding: 2px;
+    margin-left: 35px;
+}
+/* rodapé */
+footer{
+    background-color: #F9E7E7;
+    width: 100%;
+    bottom: 0;
+}
+.ref {
+    color: #1a1423;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px;
+}
+.ref a {
+    text-decoration: none;
+    color: #1a1423;
+}
+.ref a:hover {
+    color: #484d6d;
+    transition: 250ms;
+}
+
+

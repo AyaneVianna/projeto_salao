@@ -1,0 +1,117 @@
+/* fontes */
+@font-face {
+    font-family: 'Sansation Bold';
+    src: url('./fontes/Sansation_Bold.ttf') format('truetype') , url('./fontes/Sansation_Bold_Italic.ttf');
+}
+@font-face {
+    font-family: 'Sansation';
+    src: url('./fontes/Sansation_Regular.ttf');
+}
+@font-face {
+    font-family: 'Sansation Light';
+    src: url('./fontes/Sansation_Light.ttf'), url('./fontes/Sansation_Light_Italic.ttf');
+}
+
+/* edição geral */
+*{
+    font-family: 'Sansation', 'Sansation Light';
+    padding: 0;
+    margin: 0;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+/* corpo/fundo */
+body{
+    background-color: #FFFFFF;
+}
+
+/* cabeçalho */
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1A1423;
+    padding: 1%;
+}
+/* retirando a edição dos tópicos no cabeçalho */
+ul{
+    list-style: none;
+    font-size: 35px;
+}
+/* colocando os links na horizantal, mas ainda unidos */
+header ul{
+    display: flex;
+    
+}
+/* separação entre os links  */
+header ul li {
+    padding: 20px;
+}
+/*edição da cor do link e etc  */
+header ul li a{
+    text-decoration: none;
+    color:#F9E7E7
+}
+/* mudança de cor do link ao passar mouse */
+header ul li a:hover{
+    color: #ffbf00;
+    transition: 250ms;
+}
+
+.container{
+    display: flex;
+}
+/* o corpo de texto/principal */
+h1 {
+    margin-left: 190px;
+    margin-top: 150px;
+    font-size: 90px;
+}
+h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 90px; 
+    text-align: center;
+}    
+
+.cal {
+    margin:50px
+}
+
+.contato{
+    display: flex;
+    font-size: 20px;
+    background-color: rgb(255, 191, 0, 70%);
+    border-radius: 10px;
+    width: 500px;
+    margin-left: 110px;
+    margin-top: 50px;
+}
+.endereço, .tel{
+    padding: 2%;
+    margin: auto;
+    display: flex;
+}
+
+/* rodapé */
+footer{
+    background-color: #F9E7E7;
+    width: 100%;
+    bottom: 0;
+}
+.ref {
+    color: #1a1423;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px;
+}
+.ref a {
+    text-decoration: none;
+    color: #1a1423;
+}
+.ref a:hover {
+    color: #484d6d;
+    transition: 250ms;
+}
